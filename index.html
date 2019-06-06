@@ -1,10 +1,13 @@
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GDevelop Proposal</title>
+
     <style>
-        body {
+    body {
             margin: 0;
             color: #FFF;
             font-family: Helvetica, arial, sans-serif;
@@ -25,7 +28,7 @@
             position: fixed;
             top: 0;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             box-shadow: 0px 0px 3px black;
             background: #424242;
         }
@@ -129,37 +132,42 @@
         h1 {
             font-size: 2.5em;
         }
-        
-        @media screen and (max-width: 985px) {
-            #ts2 {
-                opacity: 0;
-            }
-            #grid {
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-                grid-template-columns: 1fr;
-            }
-            .fullpage {
-                width: 100vw;
-            }
-            #emp {
-                opacity: 0;
-                height: 0;
-            }
+    }
+    @media screen and (max-width: 985px) {
+        #ts2 {
+            opacity: 0;
         }
+        
+        #grid {
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+        }
+        
+        .fullpage {
+            width: 100vw;
+        }
+        
+        #emp {
+            opacity: 0;
+            height: 0;
+        }
+    }
     </style>
 </head>
 
 <body>
     <div id="ts2">
-        <element style="display:flex; justify-content:start; margin-left:20px; align-items: center; font-size: 30px; text-shadow: 0 1px 1px black;">Nilarjun | Technical Writer Portfolio</element>
+        <element style="display:flex; justify-content:start; margin-left:20px; align-items: center; font-size: 23px; ">Nilarjun | Portfolio</element>
 
-        <element style="display:flex; justify-content:end; margin-right:20px; align-items: center; font-size: 30px;">
+        <element style="display:flex; justify-content:center; margin-right:20px; align-items: center; font-size: 30px;">
             <element style="color: #0266C8;  ">G</element>
             <element style="color: #F90101;  ">o</element>
             <element style="color: #F2B50F;  ">o</element>
             <element style="color: #0266C8;  ">g</element>
             <element style="color: #00933B; ">l</element>
             <element style="color: #F90101; ">e </element>&nbsp;Season of Docs</element>
+        <element style="display:flex; justify-content:end; margin-right:5px; align-items: center; font-size: 23px; "><a href="https://docs.google.com/document/d/1VxHrqLssiYhTlCcuWRmvzd2kgOzYTwlVG3NqJZSXUhw/edit?usp=sharing" style="background: rgba(255, 255, 255, 0.3); border-radius: 5px;
+  padding: 5px 10px;color:white; text-decoration:none;" target="_blank">View Proposal</a></element>
     </div>
     <div id="emp"></div>
     <div id="grid">
@@ -189,3 +197,5 @@
         </section>
     </div>
 </body>
+
+</html>
