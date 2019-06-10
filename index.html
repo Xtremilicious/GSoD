@@ -6,43 +6,198 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/mbX6pP6/k-Ute-L6ox-400x400-copy.png" />
-    <link rel="stylesheet" href="home-style.css">
-    <link rel="icon " type="image/png " href="https://xtremilicious.github.io/gsod/assets/fav.ico " />
-    <meta charset="UTF-8 ">
-    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
-    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
+    <link rel="icon" type="image/png" href="https://xtremilicious.github.io/gsod/assets/fav.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GDevelop Proposal</title>
+    <style>
+        .body {
+            margin: 0;
+            color: #fff;
+            font-family: Helvetica, arial, sans-serif;
+        }
+        
+        #prop {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .modal-content {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        #prop:hover {
+            background: #848484;
+        }
+        
+        #grid {
+            height: 90vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        
+        #topbar {
+            height: 10vh;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            box-shadow: 0px 0px 3px black;
+            background: #424242;
+        }
+        
+        h2 {
+            position: fixed;
+        }
+        
+        .fullpage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 0 1px black;
+            background-image: url(https://i.ibb.co/S3SpM6s/floral-Pattern.png);
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+        
+        .head1:hover {
+            text-shadow: 0 1px 2px black;
+        }
+        
+        .head1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+            padding: 0 1rem;
+            text-shadow: 0 1px 1px black;
+            color: white;
+            font-weight: bold;
+        }
+        
+        #p {
+            font-size: 20px;
+        }
+        
+        .see {
+            text-decoration: none;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 5px 10px;
+            color: #fff;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        
+        .modalTemp {
+            text-decoration: none;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 5px 10px;
+            color: #fff;
+            margin-left: 5px;
+            margin-top: 5px;
+            border: none;
+        }
+        
+        section.blue {
+            background-color: #81bef7;
+        }
+        
+        .red {
+            background-color: #f7819f;
+        }
+        
+        .yellow {
+            background-color: #d7df01;
+            background-image: url(https://i.ibb.co/TKB2F4x/floral-Pattern.png);
+            background-position: right bottom;
+        }
+        
+        .green {
+            background-color: #68c368;
+            background-image: url(https://i.ibb.co/TKB2F4x/floral-Pattern.png);
+            background-position: right bottom;
+        }
+        
+        h1.black {
+            color: #000;
+        }
+        
+        #emp {
+            height: 10vh;
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+        
+        @media screen and (max-width: 985px) {
+            #topbar {
+                opacity: 0;
+            }
+            #grid {
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+            }
+            .fullpage {
+                width: 100vw;
+            }
+            #emp {
+                opacity: 0;
+                height: 0;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .fullpage {
+                background-image: none;
+            }
+        }
+    </style>
 </head>
 
-<body class="body ">
-    <div id="topbar ">
+<body class="body">
+    <div id="topbar">
         <element style="display:flex; justify-content:start; margin-left:20px; align-items: center; font-size: 23px; ">Nilarjun | Portfolio</element>
 
-        <element style="display:flex; justify-content:center; margin-right:20px; align-items: center; font-size: 30px; ">
-            <element style="color: #0266C8; ">G</element>
-            <element style="color: #F90101; ">o</element>
-            <element style="color: #F2B50F; ">o</element>
-            <element style="color: #0266C8; ">g</element>
-            <element style="color: #00933B; ">l</element>
-            <element style="color: #F90101; ">e</element>&nbsp;Season of Docs</element>
-        <element style="display:flex; justify-content:end; margin-right:10px; align-items: center; font-size: 23px; "><a id="prop " target="_blank " href="https://docs.google.com/document/d/1VxHrqLssiYhTlCcuWRmvzd2kgOzYTwlVG3NqJZSXUhw/edit?usp=sharing
-        "><i class="fa fa-file "></i> View Proposal</a></element>
+        <element style="display:flex; justify-content:center; margin-right:20px; align-items: center; font-size: 30px;">
+            <element style="color: #0266C8;">G</element>
+            <element style="color: #F90101;">o</element>
+            <element style="color: #F2B50F;">o</element>
+            <element style="color: #0266C8;">g</element>
+            <element style="color: #00933B;">l</element>
+            <element style="color: #F90101;">e</element>&nbsp;Season of Docs</element>
+        <element style="display:flex; justify-content:end; margin-right:10px; align-items: center; font-size: 23px; "><a id="prop" target="_blank" href="https://docs.google.com/document/d/1VxHrqLssiYhTlCcuWRmvzd2kgOzYTwlVG3NqJZSXUhw/edit?usp=sharing"><i class="fa fa-file"></i> View Proposal</a></element>
     </div>
-    <div id="emp "></div>
-    <div id="grid ">
+    <div id="emp"></div>
+    <div id="grid">
 
-        <section class="fullpage red ">
-            <element><img src="https://i.ibb.co/HBVhvp4/k-Ute-L6ox-400x400.png " width=100px;> </element>
-            <h1 class="head1 ">
-                <element style="color: #DF013A; ">G</element>Develop</h1>
-            <element id="p ">Documentation Contributor</element><button class="modalTemp " data-toggle="modal " data-target=".bd-example-modal-xl ">
-        <i class="fa fa-eye "></i> See Articles
+        <section class="fullpage red">
+            <element><img src="https://i.ibb.co/HBVhvp4/k-Ute-L6ox-400x400.png" width=100px;> </element>
+            <h1 class="head1">
+                <element style="color: #DF013A;  ">G</element>Develop</h1>
+            <element id="p">Documentation Contributor</element><button class="modalTemp" data-toggle="modal" data-target=".bd-example-modal-xl">
+        <i class="fa fa-eye"></i> See Articles
       </button>
-            <div class="modal fade bd-example-modal-xl " tabindex="-1 " role="dialog " aria-labelledby="myLargeModalLabel " aria-hidden="true ">
-                <div class="modal-dialog modal-xl ">
-                    <div class="modal-content ">
-                        <table class="table table-bordered table-striped ">
-                            <thead class="thead-dark ">
+            <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
                                 <tr>
                                     <th>#</th>
                                     <th>Topic</th>
@@ -50,36 +205,35 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr scope="row ">
+                                <tr scope="row">
                                     <td>1.</td>
                                     <td>A Beginner's Tutorial to an Endless Runner Game</td>
                                     <td>
-                                        <p><i class="fa fa-link "></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/tutorials/endless-runner " target="_blank ">Link</a> &mdash; A detailed step-by-step tutorial on making an Endless Runner game
-                                            from scratch.
-                                        </p>
+                                        <p><i class="fa fa-link"></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/tutorials/endless-runner" target="_blank">Link</a> &mdash; A detailed step-by-step tutorial on making an Endless Runner game from
+                                            scratch.</p>
                                     </td>
                                 </tr>
-                                <tr scope="row ">
+                                <tr scope="row">
                                     <td>2.</td>
                                     <td>A Beginner's Tutorial to a Space Shooter Game</td>
                                     <td>
-                                        <p><i class="fa fa-link "></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/tutorials/space-shooter " target="_blank ">Link</a> &mdash; A detailed step-by-step tutorial on making a Space Shooter game which
+                                        <p><i class="fa fa-link"></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/tutorials/space-shooter" target="_blank">Link</a> &mdash; A detailed step-by-step tutorial on making a Space Shooter game which
                                             includes game menu screen as well.</p>
                                     </td>
                                 </tr>
-                                <tr scope="row ">
+                                <tr scope="row">
                                     <td>3.</td>
                                     <td>Tutorial on Publishing a Game to Kongregate</td>
                                     <td>
-                                        <p><i class="fa fa-link "></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/publishing/publishing-to-kongregate-store " target="_blank ">Link</a> &mdash; A detailed tutorial teaching how to build the package
+                                        <p><i class="fa fa-link"></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/publishing/publishing-to-kongregate-store" target="_blank">Link</a> &mdash; A detailed tutorial teaching how to build the package
                                             for upload and successfully publishing it to Kongregate.</p>
                                     </td>
                                 </tr>
-                                <tr scope="row ">
+                                <tr scope="row">
                                     <td>3.</td>
                                     <td>Tutorial on Publishing a Game to Game Jolt</td>
                                     <td>
-                                        <p><i class="fa fa-link "></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/publishing/publishing-to-gamejolt-store " target="_blank ">Link</a> &mdash; A detailed tutorial teaching how to build the package
+                                        <p><i class="fa fa-link"></i> <a href="http://wiki.compilgames.net/doku.php/gdevelop5/publishing/publishing-to-gamejolt-store" target="_blank">Link</a> &mdash; A detailed tutorial teaching how to build the package
                                             for upload and successfully publishing it to Game Jolt.</p>
                                     </td>
                                 </tr>
@@ -89,29 +243,29 @@
                     </div>
                 </div>
             </div>
-            <!--<a href="https://xtremilicious.github.io/gsod/articles/gdevelop " target="_blank "><i class="fa fa-eye "></i> See Articles</a>-->
+            <!--<a href="https://xtremilicious.github.io/gsod/articles/gdevelop" target="_blank"><i class="fa fa-eye"></i> See Articles</a>-->
         </section>
-        <section class="fullpage green ">
-            <element><img src="https://i.ibb.co/2tRDyq5/Untitled-1.png " width=100px;> </element>
-            <h1 class="head1 ">GeeksforGeeks</h1>
-            <element id="p ">Technical Content Writer</element><a class="see " href="https://auth.geeksforgeeks.org/user/Nilarjun/articles " target="_blank "><i class="fa fa-eye "></i> See Articles</a>
+        <section class="fullpage green">
+            <element><img src="https://i.ibb.co/2tRDyq5/Untitled-1.png" width=100px;> </element>
+            <h1 class="head1">GeeksforGeeks</h1>
+            <element id="p">Technical Content Writer</element><a class="see" href="https://auth.geeksforgeeks.org/user/Nilarjun/articles" target="_blank"><i class="fa fa-eye"></i> See Articles</a>
         </section>
-        <section class="fullpage blue ">
-            <element><img src="https://i.ibb.co/6bkFvGc/Untitled-1.png " width=125px;> </element>
-            <h1 class="head1 ">
-                <element style="color: #01A9DB; ">Code</element>Speedy</h1>
-            <element id="p ">Technical Content Writer</element><a class="see " class="see " href="https://www.codespeedy.com/author/nilarjun_das/ " target="_blank "><i class="fa fa-eye "></i> See Articles</a>
+        <section class="fullpage blue">
+            <element><img src="https://i.ibb.co/6bkFvGc/Untitled-1.png" width=125px;> </element>
+            <h1 class="head1">
+                <element style="color: #01A9DB;  ">Code</element>Speedy</h1>
+            <element id="p">Technical Content Writer</element><a class="see" class="see" href="https://www.codespeedy.com/author/nilarjun_das/" target="_blank"><i class="fa fa-eye"></i> See Articles</a>
         </section>
-        <section class="fullpage yellow ">
-            <element><img src="https://i.ibb.co/9qKH4mx/k-Ute-L6ox-400x400.png " width=100px;> </element>
-            <h1 class="head1 ">
-                <element style="color: #DFDC2D; ">G</element>Develop Forum</h1>
-            <element id="p ">Active Member</element><a class="see " href="https://forum.gdevelop-app.com/u/Nilarjun/activity " target="_blank "><i class="fa fa-eye "></i> See Activity</a>
+        <section class="fullpage yellow">
+            <element><img src="https://i.ibb.co/9qKH4mx/k-Ute-L6ox-400x400.png" width=100px;> </element>
+            <h1 class="head1">
+                <element style="color: #DFDC2D;  ">G</element>Develop Forum</h1>
+            <element id="p">Active Member</element><a class="see" href="https://forum.gdevelop-app.com/u/Nilarjun/activity" target="_blank"><i class="fa fa-eye"></i> See Activity</a>
         </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
